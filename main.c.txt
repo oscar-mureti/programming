@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char name[50];
+    int age;
+    char primary[50];
+    char secondary[50];
+    char campuss[50];
+    char future[50];
+    printf("type here your full name:: ");
+    fgets(name,sizeof(name),stdin);
+    name[strcspn(name,"\n")]=0;
+
+    
+    printf("enter your age in 2026:: ");
+    scanf("%d",& age);
+    getchar();
+    
+    printf("enter the primary school you attended:: ");
+    fgets(primary,sizeof(primary),stdin);
+    primary[strcspn(primary,"\n")]=0;
+
+    
+    printf("enter the secondary school you attended:: ");
+    fgets(secondary,sizeof(secondary),stdin);
+    secondary[strcspn(secondary,"\n")]=0;
+
+    
+    printf("enter the campuss/university you are in:: ");
+    fgets(campuss,sizeof(campuss),stdin);
+    campuss[strcspn(campuss,"\n")]=0;
+
+    
+    printf("enter what you want to become by 2030:: ");
+    fgets(future,sizeof(future),stdin);
+    future[strcspn(future,"\n")]=0;
+
+    printf("my name is %s\n",name);
+    printf("i im %d years old\n",age);
+    printf("and here is my story\n");
+    printf("i attended %s primary school\n",primary);
+    printf("then i went to %s high school where i scored grade A\n",secondary);
+    printf("current im in %s university\n",campuss);
+    printf("and in future i would like to do %s\n",future);
+    
+        
+    return 0;
+    
+}
